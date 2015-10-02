@@ -61,10 +61,10 @@ in which document is being indexed.
 
 	
 *POSSIBLE VALUES:*
-	* index
-	* noindex
-	* follow
-	* nofollow
+* index
+* noindex
+* follow
+* nofollow
 
  	Using this tag you can tell the search engines like google and yahoo whether 
 	you want you pages to be indexed or not. You can use robots.txt instead or both
@@ -165,15 +165,32 @@ index this page again
 
 
 
-## Advanced
+## Advanced/ http-equiv meta tags 
+
+http-equiv meta tags are used to define the http headers and other data 
+
+*Examples*
+	<meta http-equiv="pragma" content="no-cache">
+
+	<meta http-equiv="Set-Cookie" content="id=2kadi23974dkfajdsl; 
+                   path=/; expires=Thursday, 20-May-15 00:15:00 GMT">
+
+	<meta http-equiv="refresh" content="30">
 
 ### x-dns-prefetch-control 
+
+With this meta tag, browser proactively performs domain name resolution on 
+both links that the user may choose to follow as well as URLs for items referenced by the document,
+including images, CSS, javaScript.
 
 *Example*
 	 <meta http-equiv="x-dns-prefetch-control" content="off"/>
 
 *Who is using*
-	tumblr.com
+*tumblr.com
+
+Find more at:
+	https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
 
 
 # SITE SPECIFIC 
@@ -194,3 +211,13 @@ index this page again
 
 * [WHATWG META tags reference](https://wiki.whatwg.org/wiki/MetaExtensions)
 	
+## Search engien to find who else is using what kind of META TAGS 
+
+Following are the search engine which are capable of searching source code
+
+* [Meanpath](https://meanpath.com/f/)
+* [Nerdydata](http://nerdydata.com/)
+* [Globalogiq.com](https://globalogiq.com/codesearch.htm)
+* [commoncrawl.org](http://commoncrawl.org/)
+
+
